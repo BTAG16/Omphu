@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omphu's World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Omphu</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#git-journey">Git Journey</a></li>
+      <li><a href="#contact">Connect</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Sanibonani · Hello · Hallo</p>
+      <h1 class="hero-title reveal delay-1">
+        I'm <span class="highlight">Omphulusa</span>
+      </h1>
+      <p class="hero-subtitle reveal delay-2">
+        23 · South African · Learning to build the future, one commit at a time.
+      </p>
+      <div class="hero-cta reveal delay-3">
+        <a href="#git-journey" class="btn btn-primary">Start My Git Journey</a>
+        <a href="#about" class="btn btn-ghost">Meet Omphu</a>
+      </div>
+    </div>
+    <div class="hero-flag">
+      <div class="flag-stripe flag-black"></div>
+      <div class="flag-stripe flag-yellow"></div>
+      <div class="flag-stripe flag-green"></div>
+      <div class="flag-stripe flag-white"></div>
+      <div class="flag-stripe flag-red"></div>
+      <div class="flag-stripe flag-blue"></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-emoji">🌍</span>
+            </div>
+          </div>
+          <div class="about-badge reveal delay-2">South Africa 🇿🇦</div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag reveal">About Me</span>
+          <h2 class="section-title reveal delay-1">
+            Ubuntu: <em>I am because we are.</em>
+          </h2>
+          <p class="about-description reveal delay-2">
+            Hey there! I'm <strong>Omphulusa</strong> — Omphu for short. Born and raised in the beautiful, vibrant land of South Africa. At 23, I'm on a journey to understand how the world's best developers collaborate, build, and ship code together.
+          </p>
+          <p class="about-description reveal delay-3">
+            That journey starts right here, right now — with <strong>Git</strong>.
+          </p>
+          <div class="about-stats reveal delay-3">
+            <div class="stat">
+              <span class="stat-number">23</span>
+              <span class="stat-label">Years Old</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">🇿🇦</span>
+              <span class="stat-label">South African</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Commits Ahead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Git Journey Section -->
+  <section class="git-journey" id="git-journey">
+    <div class="container">
+      <span class="section-tag reveal">Git Journey</span>
+      <h2 class="section-title reveal delay-1">Your First Steps with Git</h2>
+      <p class="section-subtitle reveal delay-2">
+        Git is how developers track changes, collaborate, and never lose their work. Here's where your journey begins.
+      </p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-icon">🔧</div>
+          <div class="timeline-content">
+            <span class="timeline-step">Step 1</span>
+            <h3>Install Git</h3>
+            <p>Download and install Git on your computer. It's free and works on Mac, Windows, and Linux.</p>
+            <div class="code-block">
+              <span class="code-comment"># Check if git is installed</span>
+              <br />
+              <span class="code-cmd">git --version</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-icon">👤</div>
+          <div class="timeline-content">
+            <span class="timeline-step">Step 2</span>
+            <h3>Set Up Your Identity</h3>
+            <p>Tell Git who you are. Every commit you make will carry your name and email.</p>
+            <div class="code-block">
+              <span class="code-cmd">git config --global user.name <span class="code-string">"Omphulusa"</span></span>
+              <br />
+              <span class="code-cmd">git config --global user.email <span class="code-string">"omphu@email.com"</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-icon">📁</div>
+          <div class="timeline-content">
+            <span class="timeline-step">Step 3</span>
+            <h3>Create a Repository</h3>
+            <p>A repository (repo) is where your project lives. Think of it as a smart folder that remembers everything.</p>
+            <div class="code-block">
+              <span class="code-comment"># Create a new folder and start tracking it</span>
+              <br />
+              <span class="code-cmd">mkdir my-first-project</span>
+              <br />
+              <span class="code-cmd">cd my-first-project</span>
+              <br />
+              <span class="code-cmd">git init</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-icon">📸</div>
+          <div class="timeline-content">
+            <span class="timeline-step">Step 4</span>
+            <h3>Make Your First Commit</h3>
+            <p>A commit is like saving a snapshot of your work. You can always go back to any snapshot.</p>
+            <div class="code-block">
+              <span class="code-comment"># Stage your changes</span>
+              <br />
+              <span class="code-cmd">git add .</span>
+              <br />
+              <span class="code-comment"># Save the snapshot with a message</span>
+              <br />
+              <span class="code-cmd">git commit -m <span class="code-string">"My first commit 🎉"</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-icon">🌐</div>
+          <div class="timeline-content">
+            <span class="timeline-step">Step 5</span>
+            <h3>Push to GitHub</h3>
+            <p>Share your work with the world! GitHub is a platform to store and collaborate on your repos online.</p>
+            <div class="code-block">
+              <span class="code-comment"># Connect to GitHub and push</span>
+              <br />
+              <span class="code-cmd">git remote add origin &lt;your-repo-url&gt;</span>
+              <br />
+              <span class="code-cmd">git push -u origin main</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cheat Sheet Section -->
+  <section class="cheatsheet" id="cheatsheet">
+    <div class="container">
+      <span class="section-tag reveal">Quick Reference</span>
+      <h2 class="section-title reveal delay-1">Git Cheat Sheet</h2>
+      <div class="cheat-grid">
+        <div class="cheat-card reveal">
+          <div class="cheat-icon">📋</div>
+          <h4>git status</h4>
+          <p>See what files have changed</p>
+        </div>
+        <div class="cheat-card reveal delay-1">
+          <div class="cheat-icon">➕</div>
+          <h4>git add .</h4>
+          <p>Stage all changes for commit</p>
+        </div>
+        <div class="cheat-card reveal delay-2">
+          <div class="cheat-icon">💾</div>
+          <h4>git commit -m "msg"</h4>
+          <p>Save a snapshot with a message</p>
+        </div>
+        <div class="cheat-card reveal delay-1">
+          <div class="cheat-icon">📤</div>
+          <h4>git push</h4>
+          <p>Upload changes to GitHub</p>
+        </div>
+        <div class="cheat-card reveal delay-2">
+          <div class="cheat-icon">📥</div>
+          <h4>git pull</h4>
+          <p>Download latest changes</p>
+        </div>
+        <div class="cheat-card reveal delay-3">
+          <div class="cheat-icon">🌿</div>
+          <h4>git branch</h4>
+          <p>Create a separate line of work</p>
+        </div>
+        <div class="cheat-card reveal">
+          <div class="cheat-icon">🔀</div>
+          <h4>git merge</h4>
+          <p>Combine branches together</p>
+        </div>
+        <div class="cheat-card reveal delay-1">
+          <div class="cheat-icon">📜</div>
+          <h4>git log</h4>
+          <p>See the history of commits</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <span class="section-tag">Connect</span>
+        <h2 class="section-title">Let's Build Together</h2>
+        <p>Every great developer started exactly where you are now. The first commit is always the hardest — and the most exciting.</p>
+        <a href="https://github.com" target="_blank" class="btn btn-primary">Open GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Made with ❤️ for <strong>Omphulusa</strong> · South Africa 🇿🇦</p>
+      <p class="footer-sub">Your git journey starts with a single <code>git init</code></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

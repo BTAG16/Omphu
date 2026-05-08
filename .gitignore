@@ -1,0 +1,28 @@
+# =====================================================
+#  .gitignore — files git should NOT track
+#  This is a great git lesson: protect your secrets!
+# =====================================================
+
+# Environment variables — NEVER commit real secrets
+.env
+.env.local
+.env.production
+
+# macOS system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if you add a build step later)
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
